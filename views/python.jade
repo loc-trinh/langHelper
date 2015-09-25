@@ -1,0 +1,115 @@
+extends layout
+
+block header
+	p(id="header_title") LANG: PYTHON
+
+block page
+	div.content_box#title_box
+		p#hed SPECIFICATION
+		table
+			tr
+				td#property Language
+				td Python
+			tr
+				td#property Standard
+				td 2.7.6, 3.0.3
+			tr
+				td#property Paradigm
+				td stuctured, functional, object-oriented, reflective
+			tr
+				td#property Typing
+				td duck, dynamic, strong, gradual
+			tr
+				td#property Designed by
+				td Guido van Rossum
+			tr 
+				td#property First appeared
+				td 1991; 24 years ago
+			tr
+				td#property Filename extensions
+				td .py .pyc
+			tr
+				td#property Website
+				td 
+					a(href="https://www.python.org/") www.python.org
+	div.content_box
+		p#hed THE ZEND OF PYTHON
+		pre#special Beautiful is better than ugly.<br>Explicit is better than implicit.<br>Simple is better than complex.<br>Complex is better than complicated.<br>Flat is better than nested.<br>Sparse is better than dense.<br>Readability counts.<br>Special cases aren't special enough to break the rules.<br>Although practicality beats purity.<br>Errors should never pass silently.<br>Unless explicitly silenced.<br>In the face of ambiguity, refuse the temptation to guess.<br>There should be one-- and preferably only one --obvious way to do it.<br>Although that way may not be obvious at first unless you're Dutch.<br>Now is better than never.<br>Although never is often better than *right* now.<br>If the implementation is hard to explain, it's a bad idea.<br>If the implementation is easy to explain, it may be a good idea.<br>Namespaces are one honking great idea -- let's do more of those!
+
+block content
+	.sub_menu_container
+		.right_menu_button
+			img(src="/img/right_menu_arrow.png")
+			p USER COMMANDS
+		.sub_menu
+			p Print
+		.sub_menu
+			p User Input
+		.sub_menu
+			p Commenting
+		.sub_menu
+			p Read from Text File
+		.sub_menu
+			p Write to File
+		.sub_menu
+			p Import Module
+	.sub_menu_container
+		.right_menu_button
+			img(src="/img/right_menu_arrow.png")
+			p VARIABLES
+		.sub_menu
+			p Variable Declaration
+		.sub_menu
+			p Lists
+		.sub_menu
+			p Tuples
+		.sub_menu
+			p Dictionaries
+		.sub_menu
+			p Sets
+	.sub_menu_container
+		.right_menu_button
+			img(src="/img/right_menu_arrow.png")
+			p CONTROL FLOW
+		.sub_menu
+			p If Statement
+		.sub_menu
+			p For Loop (Range)
+		.sub_menu
+			p For Loop (Each)
+		.sub_menu
+			p While Loop
+		.sub_menu
+			p Ternary Operator
+		.sub_menu
+			p Try Catch Block
+	.sub_menu_container
+		.right_menu_button
+			img(src="/img/right_menu_arrow.png")
+			p FUNCTIONS
+		.sub_menu
+			p Functions
+		.sub_menu
+			p First Class Functions
+		.sub_menu
+			p Lambda
+		.sub_menu
+			p Map
+		.sub_menu
+			p Filter
+	.sub_menu_container
+		.right_menu_button
+			img(src="/img/right_menu_arrow.png")
+			p OOP
+		.sub_menu
+			p Class Declaration & Structure
+		.sub_menu
+			p Class and Instance Variables
+		.sub_menu
+			p Constructor
+		.sub_menu
+			p Instantiation
+		.sub_menu
+			p Methods
+		.sub_menu
+			p Inheritance

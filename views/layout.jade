@@ -1,0 +1,77 @@
+doctype html
+html
+	head
+		title= title
+		script(type='text/javascript', src='/js/jquery.js')
+		script(type='text/javascript', src='/js/handlebars.js')
+		script(type='text/javascript', src='/js/my.js')
+		link(rel='stylesheet', href='/css/my.css')
+		link(rel="stylesheet" href="/css/styles/default.css")
+		script(src="/js/highlight.pack.js")
+		meta(name="viewport",content="width=device-width, initial-scale=1")
+	body
+		#menu
+			#search_box
+				img(src="/img/mobile_close.png" id="mobile_left_close")
+				p(id="search_button") SEARCH
+			#logo_box
+				img(src="/img/logo.png")
+			.menu_button
+				img(src="/img/langLogo/c++Icon.png")
+				p C++
+			.menu_button
+				img(src="/img/langLogo/pythonIcon.png")
+				p PYTHON
+			.menu_button
+				img(src="/img/langLogo/juliaIcon.png")
+				p JULIA
+			.menu_button
+				img(src="/img/langLogo/javaIcon.png")
+				p JAVA
+			.menu_button
+				img(src="/img/langLogo/javascriptIcon.png")
+				p JAVASCRIPT
+			.menu_button
+				img(src="/img/langLogo/cIcon.png")
+				p C
+			#credit @2015 LANG
+		#content
+			#search_bar
+				form
+					img(src="/img/search_icon.png")
+					input(type="text",id="search",placeholder="Search...")
+			#header
+				#mobile_left_menu
+					img(src="/img/mobile_button.png")
+				block header
+				#mobile_right_menu
+					img(src="/img/mobile_button.png")
+			#page
+				block page
+			script(id="page_script", type="text/x-handlebars-template").
+				<div id="title_box" class="content_box">
+					<p id="hed">{{page-title}}</p>
+					<p id="bod">{{body-Title}}</p>
+				</div>
+				<div class="content_box">
+					<p id="hed">SYNTAX</p>
+					<pre><code id=syntax>{{body-Syntax}}</code></pre>
+				</div>
+				<div class="content_box">
+					<p id="hed">NOTES</p>
+					<p id="bod">{{body-Notes}}</p>
+				</div>
+				<div class="content_box">
+					<p id="hed">EXAMPLE</p>
+					<pre><code id="example">{{body-Example}}</code></pre>
+				</div>
+				<div class="content_box">
+					<p id="hed">SEE ALSO</p>
+					<p id="doc">Documentation</p>
+					<div id="link_out"><a href="{{body-SeeAlso.link}}">{{body-SeeAlso.text}}</a></div>
+		#right_menu
+			#right_menu_header
+				p MENU
+				#mobile_right_close
+					img(src="/img/mobile_close.png")
+			block content

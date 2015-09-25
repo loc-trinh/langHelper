@@ -1,0 +1,117 @@
+extends layout
+
+block header
+	p(id="header_title") LANG: C++
+
+block page
+	div.content_box#title_box
+		p#hed SPECIFICATION
+		table
+			tr
+				td#property Language
+				td C++
+			tr
+				td#property Standard
+				td C++14
+			tr
+				td#property Paradigm
+				td stuctured, functional, object-oriented, generic
+			tr
+				td#property Typing
+				td static, nominative, partially inferred, structural
+			tr
+				td#property Designed by
+				td Bjarne Stroustrup
+			tr 
+				td#property First appeared
+				td 1983; 32 years ago
+			tr
+				td#property Filename extensions
+				td .c .h .cpp .c++
+			tr
+				td#property Website
+				td 
+					a(href="https://isocpp.org/") www.isocpp.org
+	div.content_box
+		p#hed COMPILING
+		img(id="special_img" src="/img/compiling.png")
+
+block content
+	.sub_menu_container
+		.right_menu_button
+			img(src="/img/right_menu_arrow.png")
+			p USER COMMANDS
+		.sub_menu
+			p Output
+		.sub_menu
+			p User Input
+		.sub_menu
+			p Commenting
+		.sub_menu
+			p Including Header Files
+		.sub_menu
+			p Namespaces
+		.sub_menu
+			p Read from Text File
+		.sub_menu
+			p Write to File
+	.sub_menu_container
+		.right_menu_button
+			img(src="/img/right_menu_arrow.png")
+			p VARIABLES
+		.sub_menu
+			p Local Variables
+		.sub_menu
+			p Constants
+		.sub_menu
+			p Arrays
+		.sub_menu
+			p Pointers
+		.sub_menu
+			p Structures
+		.sub_menu
+			p Type Definition
+		.sub_menu
+			p Vectors
+	.sub_menu_container
+		.right_menu_button
+			img(src="/img/right_menu_arrow.png")
+			p CONTROL FLOW
+		.sub_menu
+			p If Statement
+		.sub_menu
+			p Switch Case
+		.sub_menu
+			p For Loop
+		.sub_menu
+			p While Loop
+		.sub_menu
+			p Do-While Loop
+		.sub_menu
+			p Ternary Operator
+	.sub_menu_container
+		.right_menu_button
+			img(src="/img/right_menu_arrow.png")
+			p FUNCTIONS & OBJECTS
+		.sub_menu
+			p Class & Structures
+		.sub_menu
+			p Access Modifiers
+		.sub_menu
+			p Constructor
+		.sub_menu
+			p Instantiation
+		.sub_menu
+			p Functions
+		.sub_menu
+			p Operator Overloading
+		.sub_menu
+			p Inheritance
+		.sub_menu
+			p Interfaces
+		.sub_menu
+			p Friend Function
+		.sub_menu
+			p Friend Class
+		.sub_menu
+			p Destructor

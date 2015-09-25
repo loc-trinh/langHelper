@@ -1,0 +1,104 @@
+extends layout
+
+block header
+	p(id="header_title") LANG: JAVASCRIPT
+
+block page
+	div.content_box#title_box
+		p#hed SPECIFICATION
+		table
+			tr
+				td#property Language
+				td JavaScript
+			tr
+				td#property Standard
+				td ECMAScript 6
+			tr
+				td#property Paradigm
+				td structured, scripting, functional, object-oriented (prototype-based)
+			tr
+				td#property Typing
+				td dynamic, duck
+			tr
+				td#property Designed by
+				td Brendan Eich
+			tr 
+				td#property First appeared
+				td 1995; 20 years ago
+			tr
+				td#property Filename extensions
+				td .js
+			tr
+				td#property Major Library
+				td NodeJS, Jquery, AngularJS, ExpressJS, React
+	div.content_box
+		p#hed THE LOL OF JAVASCRIPT
+		pre#special > [] + []<br>''<br><br>> [] + {}<br>[object Object]<br><br>> {} + []<br>0<br><br>> {} + {}<br>NaN<br><br>'this' //hah
+
+block content
+	.sub_menu_container
+		.right_menu_button
+			img(src="/img/right_menu_arrow.png")
+			p USER COMMANDS
+		.sub_menu
+			p Console Output
+		.sub_menu
+			p Commenting
+		.sub_menu
+			p Read from Text File
+	.sub_menu_container
+		.right_menu_button
+			img(src="/img/right_menu_arrow.png")
+			p VARIABLES
+		.sub_menu
+			p Variable Declaration
+		.sub_menu
+			p Global Variables
+		.sub_menu
+			p Arrays
+		.sub_menu
+			p Determine Type
+	.sub_menu_container
+		.right_menu_button
+			img(src="/img/right_menu_arrow.png")
+			p CONTROL FLOW
+		.sub_menu
+			p If Statement
+		.sub_menu
+			p Switch Case
+		.sub_menu
+			p Ternary Operator
+		.sub_menu
+			p For Loop
+		.sub_menu
+			p For Each
+		.sub_menu
+			p While Loop
+		.sub_menu
+			p Do-While Loop
+		.sub_menu
+			p Try Catch Block
+	.sub_menu_container
+		.right_menu_button
+			img(src="/img/right_menu_arrow.png")
+			p FUNCTIONS
+		.sub_menu
+			p Function Declaration
+		.sub_menu
+			p Anonymous Functions
+		.sub_menu
+			p Closures
+		.sub_menu
+			p Function Assignment
+	.sub_menu_container
+		.right_menu_button
+			img(src="/img/right_menu_arrow.png")
+			p OBJECTS
+		.sub_menu
+			p Object Declaration
+		.sub_menu
+			p Methods
+		.sub_menu
+			p Create Object using Constructor
+		.sub_menu
+			p Constructor

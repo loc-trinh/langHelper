@@ -1,0 +1,84 @@
+extends layout
+
+block header
+	p(id="header_title") LANG: C
+
+block page
+	div.content_box#title_box
+		p#hed SPECIFICATION
+		table
+			tr
+				td#property Language
+				td C
+			tr
+				td#property Standard
+				td C11
+			tr
+				td#property Paradigm
+				td imperative, structured
+			tr
+				td#property Typing
+				td static, weak, manifest, nominal
+			tr
+				td#property Designed by
+				td Dennis Ritchie
+			tr 
+				td#property First appeared
+				td 1972; 43 years ago
+			tr
+				td#property Filename extensions
+				td .c .h
+
+block content
+	.sub_menu_container
+		.right_menu_button
+			img(src="/img/right_menu_arrow.png")
+			p USER COMMANDS
+		.sub_menu
+			p Print
+		.sub_menu
+			p User Input
+		.sub_menu
+			p Commenting
+		.sub_menu
+			p Include Header Files
+	.sub_menu_container
+		.right_menu_button
+			img(src="/img/right_menu_arrow.png")
+			p VARIABLES
+		.sub_menu
+			p Local Variables
+		.sub_menu
+			p Constants
+		.sub_menu
+			p Array
+		.sub_menu
+			p Pointers
+		.sub_menu
+			p Structures
+		.sub_menu
+			p Type Definition
+	.sub_menu_container
+		.right_menu_button
+			img(src="/img/right_menu_arrow.png")
+			p CONTROL FLOW
+		.sub_menu
+			p If Statement
+		.sub_menu
+			p Switch Case
+		.sub_menu
+			p For Loop
+		.sub_menu
+			p While Loop
+		.sub_menu
+			p Do-While Loop
+	.sub_menu_container
+		.right_menu_button
+			img(src="/img/right_menu_arrow.png")
+			p FUNCTIONS
+		.sub_menu
+			p Function Declaration
+		.sub_menu
+			p Passing by Reference
+		.sub_menu
+			p Ternary Operator
